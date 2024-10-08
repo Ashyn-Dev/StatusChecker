@@ -1,0 +1,37 @@
+{
+  "services": [
+    {
+      "name": "CalculatorService",
+      "type": "SOAP",
+      "endpoint": "http://localhost/ChatAppWcfService.CalculatorService.svc",
+      "environment": "SIT",
+      "soapAction": "http://tempuri.org/ICalculator/Add",
+      "parameters": {
+        "Param1": "32",
+        "Param2": "23"
+      }
+    },
+    {
+      "name": "CalculatorService",
+      "type": "SOAP",
+      "endpoint": "http://localhost:8000/ChatAppWcfService.CalculatorService.svc",
+      "environment": "UAT",
+      "soapAction": "http://tempuri.org/ICalculator/Add",
+      "parameters": {
+        "Param1": "15",
+        "Param2": "10"
+      }
+    },
+    {
+      "name": "CalculatorService",
+      "type": "SOAP",
+      "endpoint": "http://localhost:8080/ChatAppWcfService.CalculatorService.svc",
+      "environment": "PROD",
+      "soapAction": "http://tempuri.org/ICalculator/Add",
+      "parameters": {
+        "Param1": "100",
+        "Param2": "50"
+      }
+    }
+  ]
+}
